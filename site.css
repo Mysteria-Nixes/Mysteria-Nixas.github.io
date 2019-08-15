@@ -1,0 +1,17 @@
+body{
+    background-color:#2a2a2e;
+    color:white;
+    padding:20px 0;
+}
+
+hr{
+   background-color:#fff;
+}
+
+
+
+/*IMAGE STYLES*/
+.circleImage{
+ max-width: 100%;
+    min-width: 100%;
+}
