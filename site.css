@@ -12,6 +12,23 @@ hr{
 
 /*IMAGE STYLES*/
 .circleImage{
- max-width: 100%;
+    max-width: 100%;
     min-width: 100%;
+}
+
+.btn-primary{
+    background-color:#fff;
+    color:#24292e;
+    height: 27px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight:600;
+    border-color: #c5c9cd;
+}
+
+.btn-primary:hover{
+    background-color:#e6ebf1;
+    color:#24292e;
+    border-color:#c5c9cd;
 }
