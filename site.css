@@ -14,6 +14,8 @@ hr{
 .circleImage{
     max-width: 100%;
     min-width: 100%;
+    border:inset;
+    border-color:#fcca90;
 }
 
 .btn-primary{
@@ -39,6 +41,7 @@ hr{
 
 .projectPic{
     height:60px;
+    width:100px;
     margin-left: 150px;
     border:inset;
     border-color:#fcca90;
