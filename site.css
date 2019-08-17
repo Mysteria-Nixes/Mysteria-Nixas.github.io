@@ -19,7 +19,7 @@ hr{
 .btn-primary{
     background-color:#fff;
     color:#24292e;
-    height: 27px;
+    height: 30px;
     padding: 5px 10px;
     font-size: 12px;
     line-height: 16px;
@@ -35,7 +35,11 @@ hr{
 
 .fa-globe{
     padding-right:2px;
+}
 
-
-
+.projectPic{
+    height:60px;
+    margin-left: 150px;
+    border:inset;
+    border-color:#fcca90;
 }
