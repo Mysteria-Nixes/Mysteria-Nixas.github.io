@@ -18,18 +18,20 @@ hr{
     border-color:#fcca90;
 }
 
-.btn-primary{
+.btn-info{
     background-color:#fff;
     color:#24292e;
     height: 30px;
+    width:125px;
     padding: 5px 10px;
+    margin-left: 195px;
     font-size: 12px;
     line-height: 16px;
     font-weight:600;
     border-color: #c5c9cd;
 }
 
-.btn-primary:hover{
+.btn-info:hover{
     background-color:#e6ebf1;
     color:#24292e;
     border-color:#c5c9cd;
@@ -39,10 +41,9 @@ hr{
     padding-right:2px;
 }
 
-.projectPic{
-    height:60px;
-    width:100px;
-    margin-left: 150px;
-    border:inset;
-    border-color:#fcca90;
+.card{
+    background-color:#24292e;
+    color: #fff;
+    border-radius:0;
+    padding:10px;
 }
