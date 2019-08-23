@@ -47,6 +47,9 @@ hr{
     border-radius:0;
     padding:10px;
 }
+.header{
+    text-align: center;
+}
 .reposImg{
     display:block;
     width: 150px;
