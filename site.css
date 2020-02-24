@@ -94,7 +94,10 @@ padding: 0 !important;
     color:#fff
 }
 .work{
-    margin-left:75px;
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    width:317px;
     background-color:#838386 !important; 
     font-size:15px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -115,7 +118,8 @@ padding: 0 !important;
 }
 
 .links{
-    display:block;
+    display:inline-block;
+
 }
 .findMeText{
     text-align:center;
@@ -125,65 +129,8 @@ padding: 0 !important;
     margin-left:43%;
 }
 .mediaCard{
-    max-width:325px;
-    margin-left:37%;
-}
-
-/*.btn-info{
-    background-color:#fff;
-    color:#24292e;
-    height: 30px;
-    width:125px;
-    padding: 5px 10px;
-    margin-left: 195px;
-    font-size: 12px;
-    line-height: 16px;
-    font-weight:600;
-    border-color: #c5c9cd;
-}
-
-.btn-info:hover{
-    background-color:#e6ebf1;
-    color:#24292e;
-    border-color:#c5c9cd;
-}
-
-.fa-globe{
-    padding-right:2px;
-}
-
-.card{
-    background-color:#303336;
-    color: #fff;
-    border-radius:0;
-    padding:10px;
-}
-.header{
-    text-align: center;
-}
-.reposImg{
     display:block;
-    width: 150px;
-    height: 200px;
-    margin-left:auto;
-    margin-right:auto;
-}
-.reposImg2{
-    display:block;
+    margin-right: auto;
+    margin-left: auto;
     width: 300px;
-    height: 215px;
-    margin-left:auto;
-    margin-right:auto;
 }
-.reposImg3{
-    display:block;
-    width:375px;
-    height:185px;
-    margin-left:auto;
-    margin-right:auto;
-}
-.reposBtn{
-    display:block;
-    margin-left:220px;
-}*/
-
