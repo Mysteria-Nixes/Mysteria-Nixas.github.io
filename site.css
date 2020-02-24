@@ -68,6 +68,11 @@ padding: 0 !important;
 .elementBoxes{
     max-width:60%;
 }
+
+.tools{
+    text-align:center;
+    font-family: tangerine;
+}
 .elementCards{
     height:75px;
     margin:4%;
@@ -77,7 +82,7 @@ padding: 0 !important;
 .cardTitle{
     color:#000;
     text-align:center;
-    font-size:35px;
+    font-size:35px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .workdOn{
@@ -86,10 +91,11 @@ padding: 0 !important;
     font-family:tangerine;
 }
 .featuredWork{
-    background-color:#fff;
-    color:#000
+    color:#fff
 }
 .work{
+    margin-left:75px;
+    background-color:#838386 !important; 
     font-size:15px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -100,6 +106,27 @@ padding: 0 !important;
 
 .webSite{
     font-size:10px;
+}
+
+.findMe{
+    background-image: url("images/Background-1.jpg"); 
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+}
+
+.links{
+    display:block;
+}
+.findMeText{
+    text-align:center;
+    font-family:tangerine;
+    font-size:35px;
+    color:#fff;
+    margin-left:43%;
+}
+.mediaCard{
+    max-width:325px;
+    margin-left:37%;
 }
 
 /*.btn-info{

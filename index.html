@@ -27,25 +27,29 @@
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Me</a>
+                        <a class="nav-link" href="#aboutMe">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolia</a>
+                        <a class="nav-link" href="#tools">Tools</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Web Sites</a>
+                        <a class="nav-link" href="#myWork">My Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#locate">Find Me</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
     <div>
-        <img src="images/me.JPG" class="circleImage" />
+        <img src="images/Mugshot.jpg" class="circleImage" />
     </div>
     <div class="card-body introduction">
         <h1 class="card-title">Hi, I am Merredith Grant</h1>
         <p class="card-text">I have found so much joy and pleasure with web designing</p>
     </div>
+    <div id="aboutMe"></div>
     <div class="containerFluid aboutMe">
         <h1>About Me</h1>
         <br>
@@ -77,9 +81,11 @@
                 </div>
             </div>
         </div>
+        <div id="tools"></div>
     </div>
     <div class="containerFluid elementContainer">
         <div class="container elementBoxes">
+            <h1 class="tools">Tools</h1>
             <div class="row">
                 <div class="card elementCards border-dark col-lg-3">
                     <div class="card-body">
@@ -116,153 +122,51 @@
             </div>
         </div>
     </div>
-    <div class="containerFluid workdOn text-center">
-        <div class="container featuredWork">
+    <div id="myWork"></div>
+    <div class="containerFluid workdOn">
+        <div class="container featuredWork text-center">
             <h1>Featured Work</h1>
             <div class="row">
-                <div class="col-lg-4 work">
+                <div class=" card border-dark col-lg-5 work">
                     <p>Behind the Scenes Anything Goes</p>
-                    <a href="https://www.behindthescenesanythinggoes.com" class="website" target="_blank">https://www.behindthescenesanythinggoes.com
-                 </a>
-                 <img src="images/FullLogo.png" style="width:100px; display:block; margin-left:auto; margin-right:auto;" />
+                    <a href="https://www.behindthescenesanythinggoes.com" class="website" target="_blank"
+                        style="color:white;">https://www.behindthescenesanythinggoes.com
+                    </a>
+                    <img src="images/bsaglogo.png"
+                        style="width:100px; display:block; margin-left:auto; margin-right:auto;" />
                 </div>
-                <div class="col-lg-4 work">
+                <div class="card border-dark col-lg-5 work">
                     <p>Timeless Present Photography</p>
-                    <a href="https://www.timelesspresentphotos.com" class="website" target="_blank">https://www.timelesspresentphotos.com
+                    <a href="https://www.timelesspresentphotos.com" class="website" target="_blank"
+                        style="color:white;">https://www.timelesspresentphotos.com
                     </a>
-                    <img src="images/logo black 300.png" style="width:275px; display:block; margin-left:auto; margin-right:auto;" />
-                </div>
-                <div class="col-lg-4 work">
-                    <p>Neighborhood Alerts design</p>
-                    <a href="https://www.newberryoaksalerts.com/Home/AboutTheDeveloper" class="website" target="_blank"> https://www.newberryoaksalerts.com/
-                </a>
-                <img src="images/NeighborhoodAlerts.jpg" style="width:200px; display:block; margin-left:auto; margin-right:auto;" />
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- </div>
-    <div class="container">
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="card">
-                <h3 class="header">Web Design Projects and Contributions</h3>
-                <hr>
-                <p>
-                    <h4>Timeless Present Photography design</h4>
-                    <p>Helped redesign the home page. Worked making the sections of the homepage convertable
-                        for all screen sizes. Added cards with Bootstrap and used CSS to offset the buttons.</p>
-                    <img src="images/long logo white 275.png"
+                    <img src="images/logo black 300.png"
                         style="width:275px; display:block; margin-left:auto; margin-right:auto;" />
-                    <br>
-                    <a href="https://www.timelesspresentphotos.com" class="btn btn-info" target="_blank">
-                        <i class="fas fa-globe"></i>
-                        Visit Site
-                    </a>
-                </p>
-                <hr>
-                <p>
-                    <h4>Neighborhood Alerts developer profile design:</h4>
-                    <p> Designed the layout for the About The Developer page.</p>
-                    <img src="https://www.newberryoaksalerts.com/content/images/neighborhood-sign-1000.jpg"
-                        style="width:275px; display:block; margin-left:auto; margin-right:auto;" />
-                    <br>
-                    <a href=" https://www.newberryoaksalerts.com/Home/AboutTheDeveloper" class="btn btn-info"
-                        target="_blank">
-                        <i class="fas fa-globe"></i>
-                        Visit Site
-                    </a>
-                </p>
-                <hr>
-                <p>
-                    <h4>Behind the Scenes Anything Goes business design:</h4>
-                    <p>Designed and created the Static web page for
-                        business using PHP, Bootstrap,HTML and Css.</p>
-                    <img src="images\TMLogo.png"
-                        style="width:150px; display:block; margin-left:auto; margin-right:auto;" />
-                    <br>
-                    <a href="https://www.behindthescenesanythinggoes.com/" class="btn btn-info" target="_blank">
-                        <i class="fas fa-globe"></i>
-                        Visit Site
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="card githubRepos">
-                <h3 class="header">My Github Repositories</h3>
-                <hr>
-                <p>Code repository for Mysteria-Nixas.github.io</p>
-                <br>
-                <div class="reposBtn">
-                    <a class="github-button"
-                        href="https://github.com/Mysteria-Nixas/Mysteria-Nixas.github.io/subscription"
-                        data-icon="octicon-eye" data-size="large"
-                        aria-label="Watch Mysteria-Nixas/Mysteria-Nixas.github.io on GitHub">Watch</a>
-                </div>
-                <hr>
-                <p>Colaberative project for a JavaScript based calculator</p>
-                <img src="images\caculator.png" class="reposImg" />
-                <br>
-                <div class="reposBtn">
-                    <a class="github-button reposBtn" href="https://github.com/Mysteria-Nixas/JSCalculator/subscription"
-                        data-icon="octicon-eye" data-size="large"
-                        aria-label="Watch Mysteria-Nixas/JSCalculator on GitHub">Watch</a>
-                </div>
-                <hr>
-                <p>Pages about favorite authors using HTML and CSS</p>
-                <img src="images\authors.png" class="reposImg2" />
-                <br>
-                <div class="reposBtn">
-                    <a class="github-button reposBtn" href="https://github.com/Mysteria-Nixas/Authors/subscription"
-                        data-icon="octicon-eye" data-size="large"
-                        aria-label="Watch Mysteria-Nixas/Authors on GitHub">Watch</a>
-                </div>
-                <hr>
-                <p>A USPS homepage mimic using HTML, CSS, and Bootstrap</p>
-                <img src="images\USPS-mimic.png" class="reposImg3" />
-                <br>
-                <div class="reposBtn">
-                    <a class="github-button reposBtn" href=" https://github.com/Mysteria-nixas/USPS-Mimic/subscription"
-                        data-icon="octicon-eye" data-size="large"
-                        aria-label="Watch Mysteria/USPS-Mimic on GitHub">Watch</a>
                 </div>
             </div>
         </div>
     </div>
-    <hr>
-    <div class="row">
-        <div class="col-md-12">
-            <h3>Where to Find Me</h3>
-            <section>
-                connect with me (link to LinkedIn profile or something)
-                <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US"
-                    data-type="horizontal" data-theme="dark" data-vanity="merredith-grant-312497191"><a
-                        class="LI-simple-link"
-                        href='https://www.linkedin.com/in/merredith-grant-312497191?trk=profile-badge'>Merredith
-                        Grant</a>
+    <div id="locate"></div>
+    <div class="contatinerFluid findMe">
+        <div class="container links">
+            <h class="card-title findMeText">Where to Find Me</h>
+            <div class="card mediaCard">
+                <div class="card-body">
+                    <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US"
+                        data-type="horizontal" data-theme="light" data-vanity="merredith-grant"><a
+                            class="LI-simple-link"
+                            href='https://www.linkedin.com/in/merredith-grant?trk=profile-badge'>Merredith
+                            Grant</a>
+                    </div>
+                    <section class="text-center">
+                        <a class="github-button" href="https://github.com/Mysteria-Nixas" data-size="large"
+                            aria-label="Follow @Mysteria-Nixas on GitHub">Follow @Mysteria-Nixas</a>
+                    </section>
                 </div>
-            </section>
-            <br>
-            <section class="text-left">
-                 Place this tag where you want the button to render.
-                <a class="github-button" href="https://github.com/Mysteria-Nixas" data-size="large"
-                    aria-label="Follow @Mysteria-Nixas on GitHub">Follow @Mysteria-Nixas</a>
-            </section>
+            </div>
         </div>
-        <div class="col-md-6">
-            <section>
-                maybe another image or something that makes a "get to know me" a little better. nothing to long or fancy.
-                     just a tid bit to finish off the page-->
-    </section>
     </div>
-    </div>
-    href="https://github.com/Mysteria-Nixas">https://github.com/Mysteria-Nixas</a>.
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-    <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
-    </div>
 </body>
-
 </html>
