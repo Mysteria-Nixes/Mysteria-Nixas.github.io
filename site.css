@@ -137,3 +137,9 @@ padding: 0 !important;
     margin-left: auto;
     width: 300px;
 }
+
+.copyright{
+    text-align: center;
+    background-color:#838386;
+    height:20px;
+}
