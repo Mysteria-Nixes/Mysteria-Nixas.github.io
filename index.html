@@ -12,9 +12,17 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="site.css">
     <script src="https://kit.fontawesome.com/9c7764d756.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
 </head>
 
-<body>
+<body data-spy="scroll" data-offset="56" data-target="#navbarNav">
     <div class="card text-center pageTop">
         <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center fixed-top">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -127,7 +135,8 @@
                 <div class=" card border-dark col-lg- work">
                     <p>Behind the Scenes Anything Goes</p>
                     <a href="https://www.behindthescenesanythinggoes.com" class="website" target="_blank"
-                        style="color:white;">https://www.behindthescenesanythinggoes.com
+                        style="color:white;">
+                        https://www.behindthescenesanythinggoes.com
                     </a>
                     <img src="images/bsaglogo.png"
                         style="width:100px; display:block; margin-left:auto; margin-right:auto;" />
@@ -136,7 +145,8 @@
                 <div class="card border-dark col-lg-3 work">
                     <p>Timeless Present Photography</p>
                     <a href="https://www.timelesspresentphotos.com" class="website" target="_blank"
-                        style="color:white;">https://www.timelesspresentphotos.com
+                        style="color:white;">
+                        https://www.timelesspresentphotos.com
                     </a>
                     <img src="images/logo black 300.png"
                         style="width:275px; display:block; margin-left:auto; margin-right:auto;" />
@@ -151,10 +161,11 @@
             <div class="card mediaCard">
                 <div class="card-body">
                     <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US"
-                        data-type="horizontal" data-theme="light" data-vanity="merredith-grant"><a
-                            class="LI-simple-link"
-                            href='https://www.linkedin.com/in/merredith-grant?trk=profile-badge'>Merredith
-                            Grant</a>
+                        data-type="horizontal" data-theme="light" data-vanity="merredith-grant">
+                        <a class="LI-simple-link" href='https://www.linkedin.com/in/merredith-grant?trk=profile-badge'>
+                            Merredith
+                            Grant
+                        </a>
                     </div>
                     <section class="text-center">
                         <a class="github-button" href="https://github.com/Mysteria-Nixas" data-size="large"
@@ -165,21 +176,51 @@
         </div>
     </div>
     <footer class="copyright fixed-bottom">
-        <P> Copyright &copy;
-        <script type="text/javascript">
-            document.write(new Date().getFullYear());
-          </script></P>
+        <P>
+            Copyright &copy;
+            <script type="text/javascript">
+                document.write(new Date().getFullYear());
+            </script>
+        </P>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script>
+        $(document).ready(
+            function () {
+                //this is where the scrollspy functions will start
+                $('body').scrollspy(
+                    {
+                        target: '#navbarNav',
+                        offset: 56
+                    }
+                );
+
+                // === //comparision to see if the left is the same as the right e.g. is a == b translates to is 'a' equal to 'b'
+                // !== //compariston to see if the left is NOT the same as the right e.g is a != b translates to is 'a' NOT equal to 'b'
+
+
+                $('#navbarNav a').on('click', function (event) {
+                    //put instructions for adding != b the animation for scrolling (e.g. smooth scroll)
+                    if (this.hash !== '') {
+                        event.preventDefault();
+
+                        var hash = this.hash;
+
+                        $('html, body').animate(
+                            { scrollTop: $(hash).offset().top },
+                            1000,
+                            function () {
+                                // Add hash (#) to URL when done scrolling (default click behavior)
+                                window.location.hash = hash;
+                            });
+                    } // end of IF block
+                });
+
+
+                //this is where the scrollspy functions will end
+            });
+    </script>
 </body>
+
 </html>
